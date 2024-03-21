@@ -47,7 +47,7 @@ class ilJupyterCleanupCronPlugin extends ilCronHookPlugin
         );
     }
 
-    private final function autoLoad($a_classname)
+    private function autoLoad($a_classname)
     {
         $class_file = $this->getClassesDirectory() . '/class.' . $a_classname . '.php';
         if (@include_once($class_file)) {
