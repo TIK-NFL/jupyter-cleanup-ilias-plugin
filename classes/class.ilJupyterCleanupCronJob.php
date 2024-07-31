@@ -2,6 +2,8 @@
 
 include_once "Services/Cron/classes/class.ilCronJob.php";
 
+use \ILIAS\Cron\Schedule\CronJobScheduleType;
+
 class ilJupyterCleanupCronJob extends ilCronJob
 {
     public function getId(): string
@@ -19,9 +21,9 @@ class ilJupyterCleanupCronJob extends ilCronJob
         return ilJupyterCleanupCronPlugin::getInstance()->txt('cron_job_info');
     }
 
-    public function getDefaultScheduleType(): int
+    public function getDefaultScheduleType(): CronJobScheduleType
     {
-        return self::SCHEDULE_TYPE_IN_MINUTES;
+        return CronJobScheduleType::SCHEDULE_TYPE_IN_MINUTES;
     }
 
     public function getDefaultScheduleValue(): ?int
