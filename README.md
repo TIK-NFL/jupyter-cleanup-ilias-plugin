@@ -6,8 +6,8 @@ This cron-based plugin executes cleanups of Jupyter resources which are mainly m
 
 | Dependency                                                              | Version  |
 |-------------------------------------------------------------------------|----------|
-| [ILIAS](https://github.com/ILIAS-eLearning/ILIAS)                       | >= 8.0.0 |
-| [jupyter-ilias-plugin](https://github.com/TIK-NFL/jupyter-ilias-plugin) | >= 1.0.0 |
+| [ILIAS](https://github.com/ILIAS-eLearning/ILIAS)                       | >= 9.0.0 |
+| [jupyter-ilias-plugin](https://github.com/TIK-NFL/jupyter-ilias-plugin) | >= 2.0.0 |
 
 
 ### Install
